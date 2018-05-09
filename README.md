@@ -10,6 +10,7 @@ This is a java application.  Build the gradle project and then run it:
 
 # Notes:
 I created two kernels based loosely on kernels available in ClearCL/src/java/clearcl/ocllib/
+
 The gradle build must include "maven { url "http://dl.bintray.com/clearcontrol/ClearControl" }" as a repository
 
 1) first Kernel is to accomplish the simple task of drawing a hyperboloid into the javaFX image viewer.
