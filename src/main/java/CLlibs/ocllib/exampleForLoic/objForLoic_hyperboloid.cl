@@ -3,6 +3,8 @@
 //default sphere cx=0i
 //default sphere cy=0i
 //default sphere cz=0i
+
+
 __kernel void hyperboloid   (__write_only image3d_t image,
                         int       cx,
                         int       cy,

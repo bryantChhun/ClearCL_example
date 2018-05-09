@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\ClearCL_example.jar;%APP_HOME%\lib\guava-23.0.jar;%APP_HOME%\lib\coremem-0.4.4.jar;%APP_HOME%\lib\clearcl-0.3.36.jar;%APP_HOME%\lib\log4j-1.2.17.jar;%APP_HOME%\lib\jsr305-1.3.9.jar;%APP_HOME%\lib\error_prone_annotations-2.0.18.jar;%APP_HOME%\lib\j2objc-annotations-1.1.jar;%APP_HOME%\lib\animal-sniffer-annotations-1.14.jar;%APP_HOME%\lib\CoreMem-0.4.3.jar;%APP_HOME%\lib\javacl-1.0.0-RC4.jar;%APP_HOME%\lib\javacl-core-1.0.0-RC4.jar;%APP_HOME%\lib\opencl4java-1.0.0-RC4.jar;%APP_HOME%\lib\bridj-0.7.0.jar;%APP_HOME%\lib\junit-4.12.jar;%APP_HOME%\lib\jocl-2.0.0.jar;%APP_HOME%\lib\vecmath-1.5.2.jar;%APP_HOME%\lib\dx-1.7.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar;%APP_HOME%\lib\nativelibs4java-utils-1.6.jar
+set CLASSPATH=%APP_HOME%\lib\ClearCL_example.jar;%APP_HOME%\lib\guava-23.0.jar;%APP_HOME%\lib\clearcl-0.3.36.jar;%APP_HOME%\lib\log4j-1.2.17.jar;%APP_HOME%\lib\jsr305-1.3.9.jar;%APP_HOME%\lib\error_prone_annotations-2.0.18.jar;%APP_HOME%\lib\j2objc-annotations-1.1.jar;%APP_HOME%\lib\animal-sniffer-annotations-1.14.jar;%APP_HOME%\lib\CoreMem-0.4.3.jar;%APP_HOME%\lib\javacl-1.0.0-RC4.jar;%APP_HOME%\lib\jocl-2.0.0.jar;%APP_HOME%\lib\vecmath-1.5.2.jar;%APP_HOME%\lib\junit-4.12.jar;%APP_HOME%\lib\javacl-core-1.0.0-RC4.jar;%APP_HOME%\lib\opencl4java-1.0.0-RC4.jar;%APP_HOME%\lib\bridj-0.7.0.jar;%APP_HOME%\lib\hamcrest-core-1.3.jar;%APP_HOME%\lib\dx-1.7.jar;%APP_HOME%\lib\nativelibs4java-utils-1.6.jar
 
 @rem Execute ClearCL_example
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CLEAR_CL_EXAMPLE_OPTS%  -classpath "%CLASSPATH%" imageUI.ImageExample3D %CMD_LINE_ARGS%

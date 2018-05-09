@@ -38,7 +38,6 @@ public class ImageExample3D
   public void demoViewImage3DF() throws InterruptedException,
                                  IOException
   {
-      System.out.println("calling view");
 
     ClearCLBackendInterface lClearCLBackendInterface =
                                                      ClearCLBackends.getBestBackend();
@@ -51,9 +50,6 @@ public class ImageExample3D
 
       ClearCLContext lContext = lFastestGPUDevice.createContext();
 
-//      ClearCLProgram lProgram =
-//                              lContext.createProgram(OCLlib.class,
-//                                                     "exampleForLoic/objForLoic.cl");
         ClearCLProgram lProgram =
                           lContext.createProgram(thislib.class, "exampleForLoic/objForLoic_hyperboloid.cl");
       lProgram.buildAndLog();
@@ -70,7 +66,6 @@ public class ImageExample3D
       lKernel.setArgument("image", lImage);
       lKernel.setGlobalSizes(lImage);
 
-      lKernel.setOptionalArgument("r", 0.25f);
       lKernel.setOptionalArgument("cx", lSize / 2);
       lKernel.setOptionalArgument("cy", lSize / 2);
       lKernel.setOptionalArgument("cz", lSize / 2);
@@ -82,21 +77,10 @@ public class ImageExample3D
 
       lViewImage.waitWhileShowing();
     }
+    
   }
   
     public static void main(String[] args) {
-        
-//        java.awt.EventQueue.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                //new SB_MultiChip_UI(mm).setVisible(true);
-//                try{
-//                    new ImageExample3D().demoViewImage3DF();
-//                } catch (Exception ex) {
-//                    System.out.println("exception"+ex);
-//                }
-//            }
-//        });
         
       ImageExample3D display = new ImageExample3D();
       try{
