@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="clearcl.io.test.ClearCLIOTestsLocal" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-14T21:10:03" hostname="BryantsLaptop" time="5.088">
+  <properties/>
+  <testcase name="testTiffWriter_local" classname="clearcl.io.test.ClearCLIOTestsLocal" time="5.088"/>
+  <system-out><![CDATA[Device name: GeForce GT 650M, type: GPU, OpenCL version: 1.20000 
+ max global memory: 1073741824 
+ max local memory: 49152 
+ clock freq: 810Mhz 
+ nb compute units: 2 
+ extensions: cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_APPLE_fp64_basic_ops cl_khr_fp64 cl_khr_3d_image_writes cl_khr_depth_images cl_khr_gl_depth_images cl_khr_gl_msaa_sharing cl_khr_image2d_from_buffer cl_APPLE_ycbcr_422 cl_APPLE_rgb_422   
+
+Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTestsLocal6665500213833925783test8'...
+Done.
+Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTestsLocal2030471821666351315test16'...
+Done.
+Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTestsLocal5398531461483757601test32'...
+Done.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

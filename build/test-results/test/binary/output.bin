@@ -1,0 +1,273 @@
+BDevice name: GeForce GT 650M, type: GPU, OpenCL version: 1.20000 
+  max global memory: 1073741824 
+ max local memory: 49152 
+ clock freq: 810Mhz 
+ nb compute units: 2 
+É extensions: cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_APPLE_fp64_basic_ops cl_khr_fp64 cl_khr_3d_image_writes cl_khr_depth_images cl_khr_gl_depth_images cl_khr_gl_msaa_sharing cl_khr_image2d_from_buffer cl_APPLE_ycbcr_422 cl_APPLE_rgb_422   
+
+s14:08:39.232 [Test worker] DEBUG loci.common.services.ServiceFactory - Loaded properties from: services.properties
+¿14:08:39.237 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.POIService and implementation class loci.formats.services.POIServiceImpl
+¿14:08:39.238 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.MDBService and implementation class loci.formats.services.MDBServiceImpl
+Ã14:08:39.239 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.JPEGTurboService and implementation class loci.formats.services.JPEGTurboServiceImpl
+∆14:08:39.239 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.JAIIIOService and implementation class loci.formats.services.JAIIIOServiceImpl
+¿14:08:39.240 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.WlzService and implementation class loci.formats.services.WlzServiceImpl
+¬14:08:39.241 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.JHDFService and implementation class loci.formats.services.JHDFServiceImpl
+∆14:08:39.242 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.NetCDFService and implementation class loci.formats.services.NetCDFServiceImpl
+¬14:08:39.243 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.EXIFService and implementation class loci.formats.services.EXIFServiceImpl
+»14:08:39.244 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.MetakitService and implementation class loci.formats.services.MetakitServiceImpl
+ 14:08:39.245 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.LuraWaveService and implementation class loci.formats.services.LuraWaveServiceImpl
+∆14:08:39.246 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.OMEXMLService and implementation class loci.formats.services.OMEXMLServiceImpl
+∆14:08:39.247 [Test worker] DEBUG loci.common.services.ServiceFactory - Added interface interface loci.formats.services.JPEGXRService and implementation class loci.formats.services.JPEGXRServiceImpl
+nWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTests1911564307803751546test8'...
+e14:08:39.330 [Test worker] DEBUG loci.common.NIOByteBufferProvider - Using mapped byte buffer? false
+Done.
+oWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTests5791707138363765289test16'...
+Done.
+oWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTests7874776925293044660test32'...
+Done.
+EThrow error for: img_type = SignedNormalizedInt8	 native_type = Byte
+MThrow error for: img_type = SignedNormalizedInt8	 native_type = UnsignedByte
+FThrow error for: img_type = SignedNormalizedInt8	 native_type = Short
+NThrow error for: img_type = SignedNormalizedInt8	 native_type = UnsignedShort
+DThrow error for: img_type = SignedNormalizedInt8	 native_type = Int
+LThrow error for: img_type = SignedNormalizedInt8	 native_type = UnsignedInt
+EThrow error for: img_type = SignedNormalizedInt8	 native_type = Long
+MThrow error for: img_type = SignedNormalizedInt8	 native_type = UnsignedLong
+JThrow error for: img_type = SignedNormalizedInt8	 native_type = HalfFloat
+FThrow error for: img_type = SignedNormalizedInt8	 native_type = Float
+GThrow error for: img_type = SignedNormalizedInt8	 native_type = Double
+FThrow error for: img_type = SignedNormalizedInt16	 native_type = Byte
+NThrow error for: img_type = SignedNormalizedInt16	 native_type = UnsignedByte
+GThrow error for: img_type = SignedNormalizedInt16	 native_type = Short
+OThrow error for: img_type = SignedNormalizedInt16	 native_type = UnsignedShort
+EThrow error for: img_type = SignedNormalizedInt16	 native_type = Int
+MThrow error for: img_type = SignedNormalizedInt16	 native_type = UnsignedInt
+FThrow error for: img_type = SignedNormalizedInt16	 native_type = Long
+NThrow error for: img_type = SignedNormalizedInt16	 native_type = UnsignedLong
+KThrow error for: img_type = SignedNormalizedInt16	 native_type = HalfFloat
+GThrow error for: img_type = SignedNormalizedInt16	 native_type = Float
+HThrow error for: img_type = SignedNormalizedInt16	 native_type = Double
+GThrow error for: img_type = UnsignedNormalizedInt8	 native_type = Byte
+OThrow error for: img_type = UnsignedNormalizedInt8	 native_type = UnsignedByte
+HThrow error for: img_type = UnsignedNormalizedInt8	 native_type = Short
+PThrow error for: img_type = UnsignedNormalizedInt8	 native_type = UnsignedShort
+FThrow error for: img_type = UnsignedNormalizedInt8	 native_type = Int
+NThrow error for: img_type = UnsignedNormalizedInt8	 native_type = UnsignedInt
+GThrow error for: img_type = UnsignedNormalizedInt8	 native_type = Long
+OThrow error for: img_type = UnsignedNormalizedInt8	 native_type = UnsignedLong
+LThrow error for: img_type = UnsignedNormalizedInt8	 native_type = HalfFloat
+HThrow error for: img_type = UnsignedNormalizedInt8	 native_type = Float
+IThrow error for: img_type = UnsignedNormalizedInt8	 native_type = Double
+HThrow error for: img_type = UnsignedNormalizedInt16	 native_type = Byte
+PThrow error for: img_type = UnsignedNormalizedInt16	 native_type = UnsignedByte
+IThrow error for: img_type = UnsignedNormalizedInt16	 native_type = Short
+QThrow error for: img_type = UnsignedNormalizedInt16	 native_type = UnsignedShort
+GThrow error for: img_type = UnsignedNormalizedInt16	 native_type = Int
+OThrow error for: img_type = UnsignedNormalizedInt16	 native_type = UnsignedInt
+HThrow error for: img_type = UnsignedNormalizedInt16	 native_type = Long
+PThrow error for: img_type = UnsignedNormalizedInt16	 native_type = UnsignedLong
+MThrow error for: img_type = UnsignedNormalizedInt16	 native_type = HalfFloat
+IThrow error for: img_type = UnsignedNormalizedInt16	 native_type = Float
+JThrow error for: img_type = UnsignedNormalizedInt16	 native_type = Double
+;Throw error for: img_type = SignedInt8	 native_type = Byte
+CThrow error for: img_type = SignedInt8	 native_type = UnsignedByte
+<Throw error for: img_type = SignedInt8	 native_type = Short
+DThrow error for: img_type = SignedInt8	 native_type = UnsignedShort
+:Throw error for: img_type = SignedInt8	 native_type = Int
+BThrow error for: img_type = SignedInt8	 native_type = UnsignedInt
+;Throw error for: img_type = SignedInt8	 native_type = Long
+CThrow error for: img_type = SignedInt8	 native_type = UnsignedLong
+@Throw error for: img_type = SignedInt8	 native_type = HalfFloat
+<Throw error for: img_type = SignedInt8	 native_type = Float
+=Throw error for: img_type = SignedInt8	 native_type = Double
+<Throw error for: img_type = SignedInt16	 native_type = Byte
+DThrow error for: img_type = SignedInt16	 native_type = UnsignedByte
+=Throw error for: img_type = SignedInt16	 native_type = Short
+EThrow error for: img_type = SignedInt16	 native_type = UnsignedShort
+;Throw error for: img_type = SignedInt16	 native_type = Int
+CThrow error for: img_type = SignedInt16	 native_type = UnsignedInt
+<Throw error for: img_type = SignedInt16	 native_type = Long
+DThrow error for: img_type = SignedInt16	 native_type = UnsignedLong
+AThrow error for: img_type = SignedInt16	 native_type = HalfFloat
+=Throw error for: img_type = SignedInt16	 native_type = Float
+>Throw error for: img_type = SignedInt16	 native_type = Double
+yWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests565412913377021139SignedInt32Byte'...
+Done.
+8Success for: img_type = SignedInt32	 native_type = Byte
+ÇWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests5496407962294900839SignedInt32UnsignedByte'...
+Done.
+@Success for: img_type = SignedInt32	 native_type = UnsignedByte
+{Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests1056483242658363163SignedInt32Short'...
+Done.
+9Success for: img_type = SignedInt32	 native_type = Short
+ÉWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests9174224816176120347SignedInt32UnsignedShort'...
+Done.
+ASuccess for: img_type = SignedInt32	 native_type = UnsignedShort
+yWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests4547768379430888024SignedInt32Int'...
+Done.
+7Success for: img_type = SignedInt32	 native_type = Int
+ÅWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests8137436847340161939SignedInt32UnsignedInt'...
+Done.
+?Success for: img_type = SignedInt32	 native_type = UnsignedInt
+zWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests8887488700535026374SignedInt32Long'...
+Done.
+8Success for: img_type = SignedInt32	 native_type = Long
+ÇWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests3888001115235961010SignedInt32UnsignedLong'...
+Done.
+@Success for: img_type = SignedInt32	 native_type = UnsignedLong
+Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests8851299521117846817SignedInt32HalfFloat'...
+Done.
+=Success for: img_type = SignedInt32	 native_type = HalfFloat
+{Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests8221198310912328667SignedInt32Float'...
+Done.
+9Success for: img_type = SignedInt32	 native_type = Float
+|Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests5540984559397049664SignedInt32Double'...
+Done.
+:Success for: img_type = SignedInt32	 native_type = Double
+=Throw error for: img_type = UnsignedInt8	 native_type = Byte
+EThrow error for: img_type = UnsignedInt8	 native_type = UnsignedByte
+>Throw error for: img_type = UnsignedInt8	 native_type = Short
+FThrow error for: img_type = UnsignedInt8	 native_type = UnsignedShort
+<Throw error for: img_type = UnsignedInt8	 native_type = Int
+DThrow error for: img_type = UnsignedInt8	 native_type = UnsignedInt
+=Throw error for: img_type = UnsignedInt8	 native_type = Long
+EThrow error for: img_type = UnsignedInt8	 native_type = UnsignedLong
+BThrow error for: img_type = UnsignedInt8	 native_type = HalfFloat
+>Throw error for: img_type = UnsignedInt8	 native_type = Float
+?Throw error for: img_type = UnsignedInt8	 native_type = Double
+>Throw error for: img_type = UnsignedInt16	 native_type = Byte
+FThrow error for: img_type = UnsignedInt16	 native_type = UnsignedByte
+?Throw error for: img_type = UnsignedInt16	 native_type = Short
+GThrow error for: img_type = UnsignedInt16	 native_type = UnsignedShort
+=Throw error for: img_type = UnsignedInt16	 native_type = Int
+EThrow error for: img_type = UnsignedInt16	 native_type = UnsignedInt
+>Throw error for: img_type = UnsignedInt16	 native_type = Long
+FThrow error for: img_type = UnsignedInt16	 native_type = UnsignedLong
+CThrow error for: img_type = UnsignedInt16	 native_type = HalfFloat
+?Throw error for: img_type = UnsignedInt16	 native_type = Float
+@Throw error for: img_type = UnsignedInt16	 native_type = Double
+|Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests5828809777699338075UnsignedInt32Byte'...
+Done.
+:Success for: img_type = UnsignedInt32	 native_type = Byte
+ÑWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests4319231750220837234UnsignedInt32UnsignedByte'...
+Done.
+BSuccess for: img_type = UnsignedInt32	 native_type = UnsignedByte
+{Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests61408182179790954UnsignedInt32Short'...
+Done.
+;Success for: img_type = UnsignedInt32	 native_type = Short
+ÖWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests1384727942900225806UnsignedInt32UnsignedShort'...
+Done.
+CSuccess for: img_type = UnsignedInt32	 native_type = UnsignedShort
+{Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests4263150904409825681UnsignedInt32Int'...
+Done.
+9Success for: img_type = UnsignedInt32	 native_type = Int
+ÉWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests8312504415768633678UnsignedInt32UnsignedInt'...
+Done.
+ASuccess for: img_type = UnsignedInt32	 native_type = UnsignedInt
+|Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests1557358691776244625UnsignedInt32Long'...
+Done.
+:Success for: img_type = UnsignedInt32	 native_type = Long
+ÉWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests245370884958428576UnsignedInt32UnsignedLong'...
+Done.
+BSuccess for: img_type = UnsignedInt32	 native_type = UnsignedLong
+ÅWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests4593508821298451783UnsignedInt32HalfFloat'...
+Done.
+?Success for: img_type = UnsignedInt32	 native_type = HalfFloat
+|Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests967248262201948018UnsignedInt32Float'...
+Done.
+;Success for: img_type = UnsignedInt32	 native_type = Float
+~Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests5606639732149497671UnsignedInt32Double'...
+Done.
+<Success for: img_type = UnsignedInt32	 native_type = Double
+:Throw error for: img_type = HalfFloat	 native_type = Byte
+BThrow error for: img_type = HalfFloat	 native_type = UnsignedByte
+;Throw error for: img_type = HalfFloat	 native_type = Short
+CThrow error for: img_type = HalfFloat	 native_type = UnsignedShort
+9Throw error for: img_type = HalfFloat	 native_type = Int
+AThrow error for: img_type = HalfFloat	 native_type = UnsignedInt
+:Throw error for: img_type = HalfFloat	 native_type = Long
+BThrow error for: img_type = HalfFloat	 native_type = UnsignedLong
+?Throw error for: img_type = HalfFloat	 native_type = HalfFloat
+;Throw error for: img_type = HalfFloat	 native_type = Float
+<Throw error for: img_type = HalfFloat	 native_type = Double
+tWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests3809590481831798272FloatByte'...
+Done.
+2Success for: img_type = Float	 native_type = Byte
+|Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests2499490563996317640FloatUnsignedByte'...
+Done.
+:Success for: img_type = Float	 native_type = UnsignedByte
+uWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests2642795466903949593FloatShort'...
+Done.
+3Success for: img_type = Float	 native_type = Short
+}Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests7361360822273082842FloatUnsignedShort'...
+Done.
+;Success for: img_type = Float	 native_type = UnsignedShort
+sWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests3654840684237703338FloatInt'...
+Done.
+1Success for: img_type = Float	 native_type = Int
+zWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests764928246117981017FloatUnsignedInt'...
+Done.
+9Success for: img_type = Float	 native_type = UnsignedInt
+sWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests423181085786126596FloatLong'...
+Done.
+2Success for: img_type = Float	 native_type = Long
+|Writing image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests4199765757962376557FloatUnsignedLong'...
+Done.
+:Success for: img_type = Float	 native_type = UnsignedLong
+yWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests1907808120860131453FloatHalfFloat'...
+Done.
+7Success for: img_type = Float	 native_type = HalfFloat
+uWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests9050275436200781351FloatFloat'...
+Done.
+3Success for: img_type = Float	 native_type = Float
+vWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ImageWriterTests3849832417682137030FloatDouble'...
+Done.
+4Success for: img_type = Float	 native_type = Double
+valid data type pairs found
+SignedInt32	Byte
+SignedInt32	UnsignedByte
+SignedInt32	Short
+SignedInt32	UnsignedShort
+SignedInt32	Int
+SignedInt32	UnsignedInt
+SignedInt32	Long
+SignedInt32	UnsignedLong
+SignedInt32	HalfFloat
+SignedInt32	Float
+SignedInt32	Double
+UnsignedInt32	Byte
+UnsignedInt32	UnsignedByte
+UnsignedInt32	Short
+UnsignedInt32	UnsignedShort
+UnsignedInt32	Int
+UnsignedInt32	UnsignedInt
+UnsignedInt32	Long
+UnsignedInt32	UnsignedLong
+UnsignedInt32	HalfFloat
+UnsignedInt32	Float
+UnsignedInt32	Double
+Float	Byte
+Float	UnsignedByte
+Float	Short
+Float	UnsignedShort
+
+Float	Int
+Float	UnsignedInt
+Float	Long
+Float	UnsignedLong
+Float	HalfFloat
+Float	Float
+Float	Double
+BDevice name: GeForce GT 650M, type: GPU, OpenCL version: 1.20000 
+  max global memory: 1073741824 
+ max local memory: 49152 
+ clock freq: 810Mhz 
+ nb compute units: 2 
+É extensions: cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_byte_addressable_store cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_APPLE_fp64_basic_ops cl_khr_fp64 cl_khr_3d_image_writes cl_khr_depth_images cl_khr_gl_depth_images cl_khr_gl_msaa_sharing cl_khr_image2d_from_buffer cl_APPLE_ycbcr_422 cl_APPLE_rgb_422   
+
+sWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTestsLocal6665500213833925783test8'...
+Done.
+tWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTestsLocal2030471821666351315test16'...
+Done.
+tWriting image to '/var/folders/ps/tfzpd14d4q9b3ct61m0yg4rc0000gn/T/ClearCLIOTestsLocal5398531461483757601test32'...
+Done.

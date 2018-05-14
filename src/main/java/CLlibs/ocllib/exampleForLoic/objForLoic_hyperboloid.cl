@@ -8,8 +8,7 @@
 __kernel void hyperboloid   (__write_only image3d_t image,
                         int       cx,
                         int       cy,
-                        int       cz,
-                        float     r
+                        int       cz
                         )
 {
     const int width  = get_image_width(image);
@@ -22,15 +21,27 @@ __kernel void hyperboloid   (__write_only image3d_t image,
     int y = get_global_id(1);
     int z = get_global_id(2);
     
-    //float4 pos = (float4){x,y,z,0};
-    
-    //float4 cen = (float4){cx,cy,cz,0};
-    
     int d = floor(pow((float)(x-cx),(int)2) + pow((float)(y-cy),(int)2) - pow((float)(z-cz),(int)2));
-    //float d = (float)((pos - cen)/dim)
     
     float value = (float)((d == 0 )?1:0);
-    //float value2 = (float)( ((d > -1) && (value == 1)) ? 1:0);
     
     write_imagef (image, (int4){x,y,z,0}, value);
+}
+
+
+// Another attempt to create the hyperboloid
+__kernel void hyperboloid_2   (__write_only image3d_t image,
+                             int       cx,
+                             int       cy,
+                             int       cz
+                             )
+{
+    
+    int x = get_global_id(0);
+    int y = get_global_id(1);
+    int z = get_global_id(2);
+
+    int d = floor(pow((float)(x-cx),(int)2) + pow((float)(y-cy),(int)2) - pow((float)(z-cz),(int)2));
+    
+    write_imagef (image, (int4){x,y,z,0}, 1*(pow((float)(x-cx),(int)2) + pow((float)(y-cy),(int)2) - pow((float)(z-cz),(int)2)));
 }

@@ -1,3 +1,6 @@
+// Kernel borrowed from one of the 3d kernels at clearcl.ocllib.oldkernels
+// this is not complete or tested
+//
 __kernel void filter(__read_only image3d_t input, __write_only image3d_t output)
 {
     const sampler_t sampler = CLK_NORMALIZED_COORDS_FALSE | CLK_ADDRESS_NONE | CLK_FILTER_NEAREST;

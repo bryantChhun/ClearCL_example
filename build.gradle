@@ -22,7 +22,7 @@ plugins {
 }
 
 // Define the main class for the application
-mainClassName = 'imageUI.ImageExample3D'
+mainClassName = 'imageUI.ImageUI'
 
 sourceSets
 {
@@ -38,6 +38,19 @@ sourceSets
 	}
 }
 
+test
+{
+	testLogging.showStandardStreams = true
+	testLogging
+	{ events "passed", "skipped", "failed" }
+
+	//exclude '**/demo/**'
+	//exclude '**/run/**'
+        //exclude '**/tests/**'
+        //exclude '**/ImageWriterTests.class'
+
+	//maxHeapSize = "4G"
+}
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -46,11 +59,13 @@ dependencies {
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
     
-    // CoreMem:
-    //compile ('net.coremem:coremem:0.4.4')  {transitive= true; changing= true}
-    
     // ClearCL:
-    compile 'net.clearvolume:clearcl:0.3.36'
+    // compile 'net.clearvolume:clearcl:0.3.36'
+    // ClearCL.io.TiffWriter is not updated in version 0.3.36
+    compile 'net.clearvolume:clearcl:0.5.2'
+    
+    // Bioformats
+    compile(group: 'ome', name: 'bio-formats-tools', version: '5.5.3')
     
     //logging
     compile 'log4j:log4j:1.2.17'
@@ -65,4 +80,9 @@ repositories {
     mavenCentral()
     maven {url  "http://dl.bintray.com/clearvolume/ClearVolume" }
     maven { url "http://dl.bintray.com/clearcontrol/ClearControl" }
+    
+    maven { url "http://oss.sonatype.org/content/groups/public" }
+    maven { url "https://mvnrepository.com/artifact/org.jocl/jocl"}
+    maven { url "https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases" }
+    maven { url "http://artifacts.openmicroscopy.org/artifactory/maven/"}
 }
