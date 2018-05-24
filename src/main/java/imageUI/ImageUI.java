@@ -29,10 +29,11 @@ public class ImageUI extends javax.swing.JFrame {
 
         target_path = new javax.swing.JTextField();
         Generate_Hyperboloid = new javax.swing.JButton();
+        tolerance_field = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        target_path.setText("Path and file name to save image");
+        target_path.setText("/Users/bchhun/Desktop/");
 
         Generate_Hyperboloid.setText("Generate Hyperboloid");
         Generate_Hyperboloid.addActionListener(new java.awt.event.ActionListener() {
@@ -41,15 +42,19 @@ public class ImageUI extends javax.swing.JFrame {
             }
         });
 
+        tolerance_field.setText("tolerance (integer)");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(Generate_Hyperboloid)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(target_path, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(tolerance_field, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Generate_Hyperboloid))
+                    .addComponent(target_path, javax.swing.GroupLayout.DEFAULT_SIZE, 562, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -58,7 +63,9 @@ public class ImageUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(target_path, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Generate_Hyperboloid)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Generate_Hyperboloid)
+                    .addComponent(tolerance_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -70,7 +77,7 @@ public class ImageUI extends javax.swing.JFrame {
         ImageExample3D display = new ImageExample3D();
         try
         {
-            display.demoViewImage3DF(target_path);
+            display.demoViewImage3DF(target_path, Integer.parseInt(tolerance_field.getText()));
         } catch (Exception ex)
         {
             System.out.println("exception"+ex);
@@ -108,6 +115,7 @@ public class ImageUI extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new ImageUI().setVisible(true);
             }
@@ -117,5 +125,6 @@ public class ImageUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Generate_Hyperboloid;
     private javax.swing.JTextField target_path;
+    private javax.swing.JTextField tolerance_field;
     // End of variables declaration//GEN-END:variables
 }

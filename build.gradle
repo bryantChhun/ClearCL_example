@@ -47,7 +47,9 @@ test
 	//exclude '**/demo/**'
 	//exclude '**/run/**'
         //exclude '**/tests/**'
-        //exclude '**/ImageWriterTests.class'
+        exclude '**/ImageWriterTests.class'
+        exclude '**/ClearCLIOTestsLocal.class'
+        exclude '**/ClearCLIOTests.class'
 
 	//maxHeapSize = "4G"
 }

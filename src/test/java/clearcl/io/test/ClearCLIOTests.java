@@ -23,7 +23,8 @@ import org.junit.Test;
 
 /**
  * Test for File input/output
- *
+ * This is a copy of the ClearCLIOTests run by ClearCL.
+ * The Kernel used in this test is "test.cl" and is located based on the ClearCLBasicTests.class location
  * @author haesleinhuepf
  */
 public class ClearCLIOTests

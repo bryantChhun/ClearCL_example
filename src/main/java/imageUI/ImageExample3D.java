@@ -40,7 +40,7 @@ public class ImageExample3D
    * @throws IOException
    *           NA
    */
-  public void demoViewImage3DF(JTextField defined_path) throws InterruptedException,
+  public void demoViewImage3DF(JTextField defined_path, int _tolerance) throws InterruptedException,
                                  IOException
   {
       final ClearCLBackendJOCL lClearCLJOCLBackend =
@@ -55,8 +55,8 @@ public class ImageExample3D
           ClearCLContext lContext = lFastestGPUDevice.createContext();
 
           // program is based on my custom kernel
-          ClearCLProgram lProgram = lContext.createProgram(thislib.class, "exampleForLoic/objForLoic_hyperboloid.cl");
-
+          //ClearCLProgram lProgram = lContext.createProgram(thislib.class, "exampleForLoic/objForLoic_hyperboloid.cl");
+          ClearCLProgram lProgram = lContext.createProgram(thislib.class, "exampleForLoic/objForLoic_hyperboloid.cl", "exampleForLoic/objForLoic_filter.cl");
           lProgram.buildAndLog(); 
           // image size is as asked by Loic
           int lSize = 128;
@@ -67,34 +67,61 @@ public class ImageExample3D
                                                                 lSize);
 
           ClearCLKernel lKernel = lProgram.createKernel("hyperboloid");
+          ClearCLKernel mKernel = lProgram.createKernel("identity");
           lKernel.setArgument("image", lImage);
           lKernel.setGlobalSizes(lImage);
 
           lKernel.setOptionalArgument("cx", lSize / 2);
           lKernel.setOptionalArgument("cy", lSize / 2);
           lKernel.setOptionalArgument("cz", lSize / 2);
+          lKernel.setOptionalArgument("tolerance", _tolerance);
 
+          //lKernel.run(true);
+          //lImage.notifyListenersOfChange(lContext.getDefaultQueue());
+          //lContext.getDefaultQueue().waitToFinish();
+          
+          //chain a filter kernel
+          //ClearCLProgram mProgram = lContext.createProgram(thislib.class, "exampleForLoic/objForLoic_filter.cl");
+          //mProgram.buildAndLog();
+          int mSize = 128;
+          ClearCLImage mImage = lContext.createSingleChannelImage(ImageChannelDataType.Float,
+                                                                lSize,
+                                                                lSize,
+                                                                lSize);
+          //ClearCLKernel mKernel = mProgram.createKernel("identity");
+          mKernel.setArgument("input", lImage);
+          mKernel.setArgument("output", mImage);
+          mKernel.setGlobalSizes(mImage);
+          
           lKernel.run(true);
           lImage.notifyListenersOfChange(lContext.getDefaultQueue());
+          //lContext.getDefaultQueue().waitToFinish();
+          mKernel.run(true);
+          mImage.notifyListenersOfChange(lContext.getDefaultQueue());
         
-          //File target_path = new File("/Users/bchhun/NetBeansProjects/ClearCL_example/Hyperboloid_tiff");
           File target_path = new File(defined_path.getText());
-          TiffWriter tiff = new TiffWriter(NativeTypeEnum.UnsignedInt , 1, 0);
+          File target_path2 = new File(defined_path.getText()+"_filtered");
+          TiffWriter tiff = new TiffWriter(NativeTypeEnum.Float, 1, 0);
           tiff.setOverwrite(true);
+          // this tiffwriter method should be called "setBitsPerPixel"
           tiff.setBytesPerPixel(8);
           try
           {
               boolean response = tiff.write(lImage, target_path);
+              boolean response2 = tiff.write(mImage, target_path2);
               System.out.print("writing success = "+response);
+              System.out.print("writing success = "+response2);
           } catch (Throwable t) 
           {
               System.out.print("Throw error");
               throw new AssertionError(t);
           }
 
-          ClearCLImageViewer lViewImage = ClearCLImageViewer.view(lImage);
+          ClearCLImageViewer lViewImage = ClearCLImageViewer.view(lImage, "original");
+          ClearCLImageViewer mViewImage = ClearCLImageViewer.view(mImage, "filtered");
 
           lViewImage.waitWhileShowing();
+          mViewImage.waitWhileShowing();
         }
     
   }

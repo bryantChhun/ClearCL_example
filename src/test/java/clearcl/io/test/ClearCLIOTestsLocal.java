@@ -25,9 +25,11 @@ import CLlibs.ocllib.thislib;
 import org.junit.Test;
 
 /**
- * Test for File input/output: to check local test.cl works
+ * Test for File input/output
+ * This is a copy of the ClearCLIOTests run by ClearCL.
+ * The Kernel used in this test is "test.cl" and is located locally based on the thislib.class location
  *
- * @author haesleinhuepf, bchhun 5/14/18
+ * @author bchhun 5/14/18
  */
 public class ClearCLIOTestsLocal
 {

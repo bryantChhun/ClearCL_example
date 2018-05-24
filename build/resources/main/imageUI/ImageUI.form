@@ -24,11 +24,14 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Component id="Generate_Hyperboloid" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <Component id="target_path" pref="562" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="tolerance_field" min="-2" pref="134" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Generate_Hyperboloid" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="target_path" pref="562" max="32767" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -39,7 +42,10 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="target_path" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="Generate_Hyperboloid" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Generate_Hyperboloid" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tolerance_field" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -48,7 +54,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="target_path">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Path and file name to save image"/>
+        <Property name="text" type="java.lang.String" value="/Users/bchhun/Desktop/"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="Generate_Hyperboloid">
@@ -58,6 +64,11 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Generate_HyperboloidActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tolerance_field">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="tolerance (integer)"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

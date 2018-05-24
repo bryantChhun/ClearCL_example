@@ -33,6 +33,10 @@ public class ImageWriterTests {
      * Uses only JOCL backend
      */
     
+    /**
+     * test that creates 
+     * @throws Throwable 
+     */
     @Test
     public void testImageDataTypes() throws Throwable
     {
@@ -57,9 +61,9 @@ public class ImageWriterTests {
     /**
      * Iterates through all enum data types for Image and for native types
      *  - ImageWriter often fails to write, is it because of data types?
-     * @param lContext
-     * @param lProgram
-     * @param target_path
+     * @param lContext ClearCLContext 
+     * @param lProgram ClearCLProgram
+     * @param target_path String type, where to write the temp images.  Default is package root.
      * @throws Throwable 
      */
     public void testDataTypes(final ClearCLContext lContext, final ClearCLProgram lProgram, String target_path) throws Throwable {
@@ -107,11 +111,12 @@ public class ImageWriterTests {
         }
         else
         {
-            System.out.println("valid data type pairs found");
+            System.out.println("\n===== valid data type pairs found =====");
             passed_types.stream().forEach((item) -> 
             {
                 System.out.println(item);
             });
+            System.out.println("=======================================");
         }
       }
     
